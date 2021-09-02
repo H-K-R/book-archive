@@ -37,7 +37,7 @@ const displayBook = books => {
     } else {
         totalFoundResults.innerText = `You Have Found ${filterBooks.length} Results `;
         const booksDiv = document.getElementById('bookContainer');
-        filterBooks.slice(0, 20).forEach(filterBook => {
+        filterBooks.slice(0, 100).forEach(filterBook => {
 
             const div = document.createElement('div')
             booksDiv.classList.add('col')
